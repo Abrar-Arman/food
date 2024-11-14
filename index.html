@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap /css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- font awsom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <title>Food Wagon</title>
+</head>
+<body >
+    <!-- To Top -->
+     <div class="to-top rounded-circle d-none justify-content-center align-items-center">
+        <a href="#" >
+            <i class="fas fa-arrow-up"></i>
+        </a>
+     </div>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow">
+        <div class="container-sm">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./assets/img/general-img/intro-section/logo.png" alt="logo" class="pe-2">
+                <span>food</span> <span>waGon</span></a>
+            <button class="navbar-toggler  align-items-center" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-center w-75">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recipe</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex align-items-center gap-4" role="search">
+                    <div class="d-flex align-items-center text-color">
+                        <img src="./assets/img/general-img/intro-section/search.svg" alt="search" class="pe-2">
+                        Search Food
+                    </div>
+                    <button class="btn btn-color">
+                        <img src="./assets/img/general-img/intro-section/user.svg" alt="icon" class="pe-2">
+                        Login
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!-- intro section -->
+        <section class="intro  pt-4">
+            <div class="container-sm h-100">
+                <div class="d-flex h-100 wrapper ">
+                    <div
+                        class="start h-100 w-75 d-flex flex-column justify-content-center align-items-center text-align-center">
+                        <h1>Are you starving?</h1>
+                        <p>Within a few clicks, find meals that are accessible near you</p>
+                        <div class="order px-2 py-4 rounded-2">
+                            <div class="order-header border-bottom">
+                                <button class="btn">
+                                    <img src="./assets/img/general-img/intro-section/bike.svg" alt="bike-icon">
+                                    Delivery
+                                </button>
+                                <button class="btn">
+                                    <img src="./assets/img/general-img/intro-section/cart.svg" alt="cart-icon">
+                                    Pickup
+                                </button>
+                            </div>
+                            <div class="order-body mt-4 row justify-content-between g-2">
+                                <div class="address position-relative col-7">
+                                    <input type="text" placeholder="Enter Your Address"
+                                        class="border-0 ps-5 py-2 rounded-2">
+                                    <img src="./assets/img/general-img/intro-section/location.svg" alt="location-icon"
+                                        class="position-absolute">
+                                </div>
+                                <div class="col-lg-4 col-md-12 ">
+                                    <button class="btn px-1 ">Find Food</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="end flex-grow-1 d-flex h-100 justify-content-center align-items-end ">
+                        <img src="./assets/img/general-img/intro-section/food.png" alt="intro-img">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- food -->
+        <section class="mt-5 food pb-4">
+            <div class="container-sm">
+                <div class="row g-4 text-md-start text-sm-center text-center">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="over-lay position-relative">
+                            <img src="./assets/img/general-img/general-food/image1.png" alt="">
+                            <div class="discount position-absolute w-100 h-100  top-0 start-0 d-flex align-items-end">
+                                <span class="px-2 py-1 "><span>15</span>%</span>
+                            </div>
+                        </div>
+                        <div class="food-info">
+                            <h2 class="food-name mt-1">Greys Vage</h2>
+                            <span class=" mx-auto mx-sm-auto mx-md-0">6 Days Remaining</span>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="over-lay position-relative">
+                            <img src="./assets/img/general-img/general-food/image2.png" alt="">
+                            <div class="discount position-absolute w-100 h-100  top-0 start-0 d-flex align-items-end">
+                                <span class="px-2 py-1 "><span>10</span>%</span>
+                            </div>
+                        </div>
+                        <div class="food-info">
+                            <h2 class="food-name mt-1">Greys Vage</h2>
+                            <span class=" mx-auto mx-sm-auto mx-md-0">6 Days Remaining</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="over-lay position-relative">
+                            <img src="./assets/img/general-img/general-food/image3.png" alt="">
+                            <div class="discount position-absolute w-100 h-100  top-0 start-0 d-flex align-items-end">
+                                <span class="px-2 py-1 "><span>25%</span></span>
+                            </div>
+                        </div>
+                        <div class="food-info">
+                            <h2 class="food-name mt-1">Greys Vage</h2>
+                            <span class=" mx-auto mx-sm-auto mx-md-0">7 Days Remaining</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="over-lay position-relative">
+                            <img src="./assets/img/general-img/general-food/image4.png" alt="">
+                            <div class="discount position-absolute w-100 h-100  top-0 start-0 d-flex align-items-end">
+                                <span class="px-2 py-1 "><span>20</span>% </span>
+                            </div>
+                        </div>
+                        <div class="food-info">
+                            <h2 class="food-name mt-1">Greys Vage</h2>
+                            <span class="mx-auto mx-sm-auto mx-md-0">8 Days Remaining</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- order steps -->
+        <section class="mt-5 make-order pb-4 pt-2">
+            <div class="container-sm text-center">
+                <h2>How does it work</h2>
+                <div class="mt-4 g-3 row text-center">
+                    <div class="pt-1 col-md-6 col-lg-3 order-step ">
+                        <img src="./assets/img/general-img/buy/location.png" alt="locarion">
+                        <div class="content">
+                            <span>Select location</span>
+                            <p class="mt-1">Choose the location where your food will be delivered.</p>
+                        </div>
+                    </div>
+                    <div class="pt-1 col-md-6 col-lg-3 order-step ">
+                        <img src="./assets/img/general-img/buy/Menu.png" alt="locarion">
+                        <div class="content">
+                            <span>Choose order</span>
+                            <p class="mt-1">Check over hundreds of menus to pick your favorite food</p>
+                        </div>
+                    </div>
+                    <div class="pt-1 col-md-6 col-lg-3 order-step ">
+                        <img src="./assets/img/general-img/buy/Vector.png" alt="locarion">
+                        <div class="content ">
+                            <span>Pay advanced</span>
+                            <p class="mt-1 ">It's quick, safe, and simple. Select several methods of payment</p>
+                        </div>
+                    </div>
+                    <div class="pt-1 col-md-6 col-lg-3 order-step ">
+                        <img src="./assets/img/general-img/buy/donut.png" alt="locarion">
+                        <div class="content">
+                            <span>Enjoy meals</span>
+                            <p class="mt-1">Food is made and delivered directly to your home.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Popular items -->
+        <section class="mt-5 pb-3">
+            <div class="container-sm">
+                <h2 class="text-center mb-3 color">Popular items</h2>
+                <div class="slider position-relative  ">
+                    <div class="slider-content row g-3 justify-content-between align-items-center">
+                        <div class="col-2">
+                            <div class="card w-100 mt-1">
+                                <img src="./assets/img/populer/img5.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Greys Vage</h5>
+                                    <span>Burger Arena</span>
+                                    <span>3$</span>
+                                    <button class="d-block w-100 text-white btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card w-100 mt-1">
+                                <img src="./assets/img/populer/img5.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Greys Vage</h5>
+                                    <span>Burger Arena</span>
+                                    <span>3$</span>
+                                    <button class="d-block w-100 text-white btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card w-100 mt-1">
+                                <img src="./assets/img/populer/img5.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Greys Vage</h5>
+                                    <span>Burger Arena</span>
+                                    <span>3$</span>
+                                    <button class="d-block w-100 text-white btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card w-100 mt-1">
+                                <img src="./assets/img/populer/img5.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Greys Vage</h5>
+                                    <span>Burger Arena</span>
+                                    <span>3$</span>
+                                    <button class="d-block w-100 text-white btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card w-100 mt-1">
+                                <img src="./assets/img/populer/img5.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Greys Vage</h5>
+                                    <span>Burger Arena</span>
+                                    <span>3$</span>
+                                    <button class="d-block w-100 text-white btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-action">
+                        <!-- <button class="btn btn-pre position-absolute rounded-circle ">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button> -->
+                        <button
+                            class="btn btn-nxt position-absolute rounded-circle d-none d-lg-block d-xlg-block d-xxlg-block">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Featured Restaurants -->
+        <section class="mt-4 restaurants pb-4">
+            <div class="container-sm">
+                <h2 class="text-center mb-3 color">Featured Restaurants</h2>
+                <div class="row g-3 justify-content-between align-items-center">
+                </div>
+                <div class="view d-flex justify-content-center mt-3">
+                    <span class="d-inline-block px-4 py-1 rounded-2">View All</span>
+                </div>
+
+            </div>
+        </section>
+        <!-- Search by Food -->
+        <section class="mt-4 search-food pb-3">
+            <div class="container-sm">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="mb-3 ">Search by Food</h2>
+                    <div class="controll">
+                        <div class="d-flex gap-1">
+                            <span class="pe-2">view all</span>
+                            <button class="rounded-circle d-flex justify-content-center align-items-center"><i
+                                    class="fa-solid fa-angle-left"></i></button>
+                            <button class="rounded-circle d-flex  justify-content-center align-items-center"><i
+                                    class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="category mt-2">
+                    <div class="row g-2 justify-content-between text-center align-items-center">
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                            <div class="d-flex flex-column gap-1 align-items-center">
+                                <img src="./assets/img/category/Image.png" alt="pizza" class="rounded-circle">
+                                <span>Pizza</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                            <div class="d-flex flex-column gap-1 align-items-center">
+                                <img src="./assets/img/category/img1.png" alt="Burger" class="rounded-circle">
+                                <span>Burger</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                            <div class="d-flex flex-column gap-1 align-items-center">
+                                <img src="./assets/img/category/img2.png" alt="noodles" class="rounded-circle">
+                                <span>Noodles</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                            <div class="d-flex flex-column gap-1 align-items-center">
+                                <img src="./assets/img/category/img3.png" alt="Sub-sandiwch" class="rounded-circle">
+                                <span>Sub-sandiwch</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                            <div class="d-flex flex-column gap-1 align-items-center">
+                                <img src="./assets/img/category/img4.png" alt="Chowmein" class="rounded-circle">
+                                <span>Chowmein</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+                            <div class="w-100 d-flex flex-column gap-1 align-items-center">
+                                <img src="./assets/img/category/img5.png" alt="steak" class="rounded-circle">
+                                <span>Steak</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- adver -->
+         <section class="mt-5 d-flex justify-content-center  py-3 text-center px-2" style="background-color: #FEEFD0;">
+            <img src="./assets/img/general-img/Card.png" alt="" class="w-75" style="min-width: 300px; max-width: 700px;">
+         </section>
+
+        <!-- food-info -->
+        <section class="mt-5 food-sec pb-4">
+            <div class="container-sm">
+                <div class="d-flex flex-columns gap-3">
+                    <div class="content">
+                        <div class="row  text-center align-items-center shadow rounded-end-4">
+                            <div
+                                class=" order-2 order-lg-1 col-md-5  d-flex flex-column justify-content-center align-items-center  ">
+                                <div class="w-100  h-70">
+                                    <p>Best deals <span>Crispy Sandwiches</span></p>
+                                    <span>Enjoy the large size of sandwiches. Complete
+                                        perfect slice of sandwiches.</span>
+                                    <button
+                                        class="w-70 d-block text-uppercase btn-bg rounded-2 px-3 py-2 mx-auto my-4">Proceed
+                                        to order</button>
+                                </div>
+                            </div>
+                            <div class="order-1 order-lg-2 col-md-7 p-0 ">
+                                <img src="./assets/img/food-info/img1.png" alt="" class="w-100 d-block rounded-end-4">
+                            </div>
+                        </div>
+                        <div class="mt-4 row text-center align-items-center shadow rounded-start-4">
+                            <div class=" col-md-7 px-0">
+                                <img src="./assets/img/food-info/img3.png" alt="" class="w-100 d-block rounded-start-4">
+                            </div>
+                            <div class="col-md-5  d-flex flex-column justify-content-center align-items-center ">
+                                <div class="w-100">
+                                    <p>Celebrate parties
+                                        with <span>Fried Chicken</span></p>
+                                    <span>Get the best fried chicken smeared with a lip smacking lemon chili flavor.
+                                        Check out best deals for fried chicken.</span>
+                                    <button
+                                        class="w-70 d-block text-uppercase btn-bg rounded-2 px-3 py-2 mx-auto my-4">Proceed
+                                        to order</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 row text-center align-items-center shadow rounded-end-4 ">
+                            <div
+                                class="order-2 order-lg-1 col-md-5  d-flex flex-column justify-content-center align-items-center  ">
+                                <div class="w-100">
+                                    <p>Wanna eat hot & spicy <span>Pizza?</span></p>
+                                    <span>Pair up with a friend and enjoy the hot and crispy pizza pops. Try it with the
+                                        best deals.</span>
+                                    <button
+                                        class="w-70 d-block text-uppercase btn-bg rounded-2 px-3 py-2 mx-auto my-4">Proceed
+                                        to order</button>
+                                </div>
+                            </div>
+                            <div class="order-1 order-lg-2 col-md-7 p-0 ">
+                                <img src="./assets/img/food-info/img2.png" alt="pizza"
+                                    class="w-100 d-block rounded-end-4">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- request order -->
+        <section class="mt-5 bg-order">
+            <div class=" h-100 d-flex flex-column justify-content-center align-items-center  gap-2">
+                <p>Are you ready to order with the best deals?</p>
+                <button class="btn d-block ">Proceed to order <i class="fa-solid fa-angle-right"></i> </button>
+            </div>
+        </section>   
+    </main>
+    <!-- footer -->
+     <footer class="py-4" >
+        <div class="container-sm py-3">
+            <div>
+            <span class="mb-2 d-block cities ">Our top cities</span>
+            <div class="footer-city pb-4 row gap-3 border-bottom">
+             <div class="col-3  col-lg-2">
+               <span class="d-block mb-1">San Francisco</span>
+               <span class="d-block mb-1">Miami</span>
+               <span class="d-block mb-1">San Diego</span>
+               <span class="d-block mb-1">East Bay</span>
+               <span class="d-block mb-1">Long Beach</span>
+             </div>
+             <div class="col-3  col-lg-2">
+                <span class="d-block mb-1">Los Angeles</span>
+                <span class="d-block mb-1">Washington DC</span>
+                <span class="d-block mb-1">Seattle</span>
+                <span class="d-block mb-1">Portland</span>
+                <span class="d-block mb-1">Nashville</span>
+              </div>
+              <div class="col-3  col-lg-2">
+                <span class="d-block mb-1">New York City</span>
+                <span class="d-block mb-1">Orange County</span>
+                <span class="d-block mb-1">Atlanta</span>
+                <span class="d-block mb-1">Charlotte</span>
+                <span class="d-block mb-1">Denver</span>
+              </div>
+              <div class="col-3 col-lg-2">
+                <span class="d-block mb-1">Chicago</span>
+                <span class="d-block mb-1">Phoenix</span>
+                <span class="d-block mb-1">Las Vegas</span>
+                <span class="d-block mb-1">Sacramento</span>
+                <span class="d-block mb-1">Oklahoma City</span>
+              </div>
+              <div class="col-3 col-lg-2">
+                <span class="d-block mb-1">Columbus</span>
+                <span class="d-block mb-1">New Mexico</span>
+                <span class="d-block mb-1">Albuquerque</span>
+                <span class="d-block mb-1">Sacramento</span>
+                <span class="d-block mb-1">New Orleans</span>
+              </div>
+            </div>
+            </div>
+            <div class="row pb-4 border-bottom">
+                <div class="footer-info mt-4 col-md-8 d-flex ">
+                  <div class="col-4 d-flex flex-column gap-1 justify-content-between ">
+                    <span class="mb-2 title">Company</span>
+                    <span>About us</span>
+                    <span>Team</span>
+                    <span>Careers</span>
+                    <span>Blog</span>
+                  </div>
+                  <div class="col-4 d-flex flex-column gap-1">
+                    <span class="mb-2 title">Contact</span>
+                    <span>Help & Support</span>
+                    <span>Partner with us </span>
+                    <span>Ride with us</span>
+                  </div>
+                  <div class="col-4 d-flex flex-column gap-1">
+                    <span class="mb-2 title">Legal</span>
+                    <span>Terms & Conditions</span>
+                    <span>Refund & Cancellation</span>
+                    <span>Privacy Policy</span>
+                    <span>Cookie Policy</span>
+                  </div>
+                </div>
+                <div class="concat mt-4 col-md-4">
+                    <span>Follow Us</span>
+                    <div class="icon w-100 mt-2 d-flex gap-3  ">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <p class="mt-2 mb-0">Receive exclusive offers in your mailbox</p>
+                    <div class="box">
+                        <input type="text"  placeholder="Enter your email" class="border-0 rounded-1 px-2 mt-2 py-1 me-1" >
+                        <button class=" btn px-2 py-2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-2">All rights Reserved &copy; Your Company, 2021</p>
+        </div>
+     </footer>
+
+    <!-- js script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/home.js"></script>
+</body>
+</html>
