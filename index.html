@@ -16,10 +16,16 @@
 </head>
 <body >
     <!-- To Top -->
-     <div class="to-top rounded-circle d-none justify-content-center align-items-center">
+     <div class="to-top rounded-circle  justify-content-center align-items-center">
         <a href="#" >
             <i class="fas fa-arrow-up"></i>
         </a>
+     </div>
+     <div id="overlay"></div>
+     <div id="welcome">
+       <h1>Welcome to My Website!</h1>
+       <p>We're glad to have you here.</p>
+       <button onclick="closeWelcome()">Close</button>
      </div>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg sticky-top shadow">
@@ -38,7 +44,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Recipe</a>
+                        <a class="nav-link" href="recipe.html">Recipe</a>
                     </li>
                 </ul>
 
@@ -264,7 +270,7 @@
             </div>
         </section>
         <!-- Featured Restaurants -->
-        <section class="mt-4 restaurants pb-4">
+        <section class="mt-4 restaurants pb-4 px-2" >
             <div class="container-sm">
                 <h2 class="text-center mb-3 color">Featured Restaurants</h2>
                 <div class="row g-3 justify-content-between align-items-center">
@@ -340,7 +346,7 @@
          </section>
 
         <!-- food-info -->
-        <section class="mt-5 food-sec pb-4">
+        <section class="mt-5 food-sec pb-4 px-3">
             <div class="container-sm">
                 <div class="d-flex flex-columns gap-3">
                     <div class="content">

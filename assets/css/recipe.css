@@ -1,0 +1,66 @@
+@import url("./main.css");
+body{
+    background-color: #f2f2f2fa;
+}
+.Recipes h2{
+    font-size: 28px;
+    color: var(--text-orange-color);
+    font-family: var(--secondary-font-family);
+}
+.card-body h2,
+.card-body .info {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--secondary-font-family);
+}
+
+.diff,
+.easy,
+.medium {
+  color: var(--white);
+}
+.diff {
+  background-color: #d62828;
+}
+.easy {
+  background-color: #7fc83d;
+}
+.medium {
+  background-color: var(--text-yellow-color);
+}
+.Recipes img {
+  transition: transform 0.3s;
+}
+.Recipes img:hover {
+  transform: scale(0.9);
+}
+.tag span{
+    color: var(--white);
+    font-family: var(--secondary-font-family);
+}
+.tag span:nth-child(even){
+    background-color: #6E6E6E;
+}
+.tag span:nth-child(odd){
+    background-color: #D3D3D3;
+}
+.icon{
+    display: none;
+}
+.icon i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.card:hover .icon{
+ display: block;
+}
+.save {
+    width: 40%;
+    min-width: 140px;
+    background-color: #D3D3D3;
+    border-left: 6px solid green;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    display: none;
+
+}

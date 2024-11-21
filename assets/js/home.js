@@ -1,3 +1,25 @@
+//handel to top arrow
+const section = document.querySelector(".restaurants");
+const arrowTop = document.querySelector(".to-top");
+console.log(arrowTop);
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= section.offsetTop) {
+    arrowTop.style.display = "flex";
+    console.log( arrowTop.style);
+  } else {
+    arrowTop.style.display = "none";
+  }
+});
+//
+// // setTimeout(() => {
+// //   document.getElementById("overlay").style.display = "block";
+// //   document.getElementById("welcome").style.display = "block";
+// //   console.log('hi')
+// }, 3000);
+// setTimeout(() => {
+//   document.getElementById("overlay").style.display = "block";
+//   document.getElementById("welcome").style.display = "block";
+// }, 3000);
 // slider
 const populerItem = [
   {
@@ -143,7 +165,7 @@ let populerRestrunt = [
     title: "Foodworld",
     buttonCon: "Opens tomorrow",
     discount: "20%",
-    rating:null
+    rating: null,
   },
   {
     id: 2,
@@ -152,7 +174,7 @@ let populerRestrunt = [
     title: "Pizzahub",
     buttonCon: "Opens tomorrow",
     discount: "15%",
-    rating:null
+    rating: null,
   },
   {
     id: 3,
@@ -161,7 +183,7 @@ let populerRestrunt = [
     title: "Donuts hut",
     buttonCon: "Opens tomorrow",
     discount: "10%",
-    rating:null
+    rating: null,
   },
   {
     id: 4,
@@ -170,7 +192,7 @@ let populerRestrunt = [
     title: "Donuts hut",
     buttonCon: "Opens tomorrow",
     discount: "15%",
-    rating:null
+    rating: null,
   },
   {
     id: 5,
@@ -179,7 +201,7 @@ let populerRestrunt = [
     title: "Ruby Tuesday",
     buttonCon: "Open Now",
     discount: "10%",
-    rating:null
+    rating: null,
   },
   {
     id: 6,
@@ -188,7 +210,7 @@ let populerRestrunt = [
     title: "Kuakata Fried Chicken",
     buttonCon: "Open Now",
     discount: "20%",
-    rating:null
+    rating: null,
   },
   {
     id: 7,
@@ -197,7 +219,7 @@ let populerRestrunt = [
     title: "Red Square",
     buttonCon: "Opens tomorrow",
     discount: "10%",
-    rating:null
+    rating: null,
   },
   {
     id: 8,
@@ -206,7 +228,7 @@ let populerRestrunt = [
     title: "Taco Bell",
     buttonCon: "Opens tomorrow",
     discount: "10%",
-    rating:null
+    rating: null,
   },
   {
     id: 9,
@@ -215,7 +237,7 @@ let populerRestrunt = [
     title: "Foodworld",
     buttonCon: "Opens tomorrow",
     discount: "20%",
-    rating:null
+    rating: null,
   },
   {
     id: 10,
@@ -224,7 +246,7 @@ let populerRestrunt = [
     title: "Pizzahub",
     buttonCon: "Opens tomorrow",
     discount: "15%",
-    rating:null
+    rating: null,
   },
   {
     id: 11,
@@ -233,7 +255,7 @@ let populerRestrunt = [
     title: "Donuts hut",
     buttonCon: "Opens tomorrow",
     discount: "10%",
-    rating:null
+    rating: null,
   },
   {
     id: 12,
@@ -248,7 +270,7 @@ const resturebtFood = document.querySelector(".restaurants .row");
 const view = document.querySelector(".view span");
 function renderPopulerRestrunt(arr) {
   const content = arr.map(
-    (item,ind )=> `
+    (item, ind) => `
          <div class="col-md-6 col-lg-3">
                     <div class="card w-100 mt-1 ">
                         <div class="over-lay position-relative">
@@ -267,23 +289,39 @@ function renderPopulerRestrunt(arr) {
                                 <img src=${item.resturentImg} alt="">
                                 <div class="info">
                                     <span>${item.title}</span>
-                                     <span class='gold'>${item.rating!=null ? `${item.rating}  rating`:''}</span>
-                                    <div class="rating ${item.rating ?'d-none':''}">
+                                     <span class='gold'>${
+                                       item.rating != null
+                                         ? `${item.rating}  rating`
+                                         : ""
+                                     }</span>
+                                    <div class="rating ${
+                                      item.rating ? "d-none" : ""
+                                    }">
                                         <i onclick='makeRating(${
                                           item.id
-                                        },${1},${ind})' class="fa-regular fa-star ${item?.rating >=1?'gold':''}"></i>
+                                        },${1},${ind})' class="fa-regular fa-star ${
+      item?.rating >= 1 ? "gold" : ""
+    }"></i>
                                         <i  onclick='makeRating(${
                                           item.id
-                                        },${2},${ind})' class="fa-regular fa-star ${item?.rating >=2?'gold':''}"></i>
+                                        },${2},${ind})' class="fa-regular fa-star ${
+      item?.rating >= 2 ? "gold" : ""
+    }"></i>
                                         <i  onclick='makeRating(${
                                           item.id
-                                        },${3},${ind})' class="fa-regular fa-star ${item?.rating >=3?'gold':''}"></i>
+                                        },${3},${ind})' class="fa-regular fa-star ${
+      item?.rating >= 3 ? "gold" : ""
+    }"></i>
                                         <i  onclick='makeRating(${
                                           item.id
-                                        },${4},${ind})' class="fa-regular fa-star ${item?.rating >=4?'gold':''}"></i>
+                                        },${4},${ind})' class="fa-regular fa-star ${
+      item?.rating >= 4 ? "gold" : ""
+    }"></i>
                                         <i  onclick='makeRating(${
                                           item.id
-                                        },${5},${ind})' class="fa-regular fa-star ${item?.rating ==5?'gold':''}"></i>
+                                        },${5},${ind})' class="fa-regular fa-star ${
+      item?.rating == 5 ? "gold" : ""
+    }"></i>
 
                                     </div>
                                 </div>
@@ -302,21 +340,26 @@ function renderPopulerRestrunt(arr) {
 }
 let counter = 0;
 //first render display 8 iteme
-renderPopulerRestrunt(populerRestrunt.slice(0, 8),1);
+renderPopulerRestrunt(populerRestrunt.slice(0, 8), 1);
 view.addEventListener("click", () => {
   renderPopulerRestrunt(
     counter % 2 == 0 ? populerRestrunt : populerRestrunt.slice(0, 8),
     counter
   );
-  if (counter % 2 == 0 )  {
+  if (counter % 2 == 0) {
     view.textContent = "Show less";
   } else {
     view.textContent = "View All";
+  }
+  counter++;
+});
+function makeRating(id, rating, ind) {
+  const updateArr = populerRestrunt.map((item) =>
+    item.id == id ? { ...item, rating } : item
+  );
+  populerRestrunt = updateArr;
+  renderPopulerRestrunt(
+    ind <= 7 ? populerRestrunt.slice(0, 8) : populerRestrunt
+  );
 }
-counter++;});
-function makeRating(id, rating,ind) {
-    const updateArr=populerRestrunt.map(item=>item.id ==id?({...item,rating}):item);
-    populerRestrunt=updateArr;
-    renderPopulerRestrunt(ind<=7 ? populerRestrunt.slice(0,8):populerRestrunt)
-}
-
+console.log('jjjjjj')
