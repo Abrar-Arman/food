@@ -1,6 +1,5 @@
 const recipeCon = document.querySelector(".Recipes .row");
 const save = document.querySelector(".save");
-console.log(save);
 let data;
 
 async function getRecipes() {

@@ -1,7 +1,6 @@
 //handel to top arrow
 const section = document.querySelector(".restaurants");
 const arrowTop = document.querySelector(".to-top");
-console.log(arrowTop);
 window.addEventListener("scroll", () => {
   if (window.scrollY >= section.offsetTop) {
     arrowTop.style.display = "flex";
@@ -10,16 +9,19 @@ window.addEventListener("scroll", () => {
     arrowTop.style.display = "none";
   }
 });
-//
-// // setTimeout(() => {
-// //   document.getElementById("overlay").style.display = "block";
-// //   document.getElementById("welcome").style.display = "block";
-// //   console.log('hi')
-// }, 3000);
-// setTimeout(() => {
-//   document.getElementById("overlay").style.display = "block";
-//   document.getElementById("welcome").style.display = "block";
-// }, 3000);
+//welcome
+const overlay = document.querySelector(".overlay");
+const welcome = document.querySelector(".welcome");
+ setTimeout(() => {
+  overlay.style.display = "block";
+  welcome.style.display = "block";
+}, 4000);
+function closeWelcome(){
+  overlay.style.display = "none";
+  welcome.style.display = "none";
+}
+
+
 // slider
 const populerItem = [
   {
@@ -362,4 +364,3 @@ function makeRating(id, rating, ind) {
     ind <= 7 ? populerRestrunt.slice(0, 8) : populerRestrunt
   );
 }
-console.log('jjjjjj')

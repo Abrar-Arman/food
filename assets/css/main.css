@@ -31,6 +31,15 @@
  .nav-link {
    font-size: 14px;
  }
+ .nav-item a{
+  color:#212121;
+ }
+ .nav-item a:hover{
+  color:var(--text-yellow-color)
+ }
+ .navbar-nav .nav-link.active{
+  color:var(--text-orange-color)
+ }
  .text-color {
    color: #424242;
    font-size: 12px;
